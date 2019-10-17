@@ -1,0 +1,13 @@
+[2019-10-17T20:17:02,242][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.queue", :path=>"/home/userlogstash/logstash/logstash-7.3.2/data/queue"}
+[2019-10-17T20:17:02,264][INFO ][logstash.setting.writabledirectory] Creating directory {:setting=>"path.dead_letter_queue", :path=>"/home/userlogstash/logstash/logstash-7.3.2/data/dead_letter_queue"}
+[2019-10-17T20:17:02,747][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2019-10-17T20:17:02,761][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.3.2"}
+[2019-10-17T20:17:02,790][INFO ][logstash.agent           ] No persistent UUID file found. Generating new UUID {:uuid=>"d5cfeeae-7c8e-4060-a3f5-64a90a91e64c", :path=>"/home/userlogstash/logstash/logstash-7.3.2/data/uuid"}
+[2019-10-17T20:17:04,403][INFO ][org.reflections.Reflections] Reflections took 58 ms to scan 1 urls, producing 19 keys and 39 values 
+[2019-10-17T20:17:05,699][WARN ][org.logstash.instrument.metrics.gauge.LazyDelegatingGauge] A gauge metric of an unknown type (org.jruby.RubyArray) has been create for key: cluster_uuids. This may result in invalid serialization.  It is recommended to log an issue to the responsible developer/development team.
+[2019-10-17T20:17:05,706][INFO ][logstash.javapipeline    ] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>2, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>250, :thread=>"#<Thread:0x5797674a run>"}
+[2019-10-17T20:17:05,901][INFO ][logstash.javapipeline    ] Pipeline started {"pipeline.id"=>"main"}
+[2019-10-17T20:17:06,086][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[2019-10-17T20:17:06,702][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2019-10-17T20:17:07,911][INFO ][logstash.inputs.jdbc     ] (0.143580s) SELECT DISTINCT EBELN, EBELP, 'teste_hana' as event FROM SLTQA_NEW.EKPO LIMIT 10
+[2019-10-17T20:17:08,774][INFO ][logstash.runner          ] Logstash shut down.
